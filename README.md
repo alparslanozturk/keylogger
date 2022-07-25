@@ -1,4 +1,7 @@
 keylogger program ( python + pip install pynput)
 
 
-# bazi düznelmeler yaptım. 
+# Hatalar
+* program gmail e gönderim yapmıyor. 
+* program özel bir tuş konbinasyonu ile durdurulması lazım. 
+...
